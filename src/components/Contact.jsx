@@ -2,16 +2,9 @@ import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div className="mt-[-100px] pb-24 ">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center  text-3xl  lg:text-6xl lg:leading-normal tracking-tight  "
-      >
-        Contact
-      </motion.h2>
-      <div className="text-center tracking-tighter">
+    <div className="mt-[-30px] pb-10 ">
+      <div class="border-t border-white opacity-25"></div>
+      <div className="text-sm text-center tracking-tighter">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -24,7 +17,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-2"
         >
           {CONTACT.phoneNo}
         </motion.p>
@@ -32,7 +25,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-2"
         >
           {CONTACT.email}
         </motion.p>

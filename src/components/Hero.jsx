@@ -1,6 +1,6 @@
 import profile from "../assets/Profile.png";
 import { HERO_CONTENT } from "../constants";
-import { animate, motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
   visible: {
@@ -15,7 +15,7 @@ const childVariants = {
 };
 const Hero = () => {
   return (
-    <div className="pb-4 lg:mb-36 lg:px-20">
+    <div className=" pb-4 lg:mb-36 lg:px-20">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center mt-[-70px] lg:p-8 lg:mt-[-90px]">
@@ -40,7 +40,7 @@ const Hero = () => {
           >
             <motion.h2
               variants={childVariants}
-              className="pb-2 text-3xl tracking-tighter lg:text-8xl "
+              className="pb-2 text-3xl tracking-tighter lg:text-8xl lg:mt-10 "
             >
               <span className="block lg:hidden">Alan Mathew Varghese</span>
               <span className="hidden lg:block">Alan Mathew</span>
